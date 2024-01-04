@@ -3,8 +3,8 @@ version: '3'
 services:
   db:
     image: postgres
-    # volumes:
-    #   - /home/db:/var/lib/postgresql/data
+    volumes:
+    - ./init.db/:/docker-entrypoint-initdb.d/
 
   web:
     build: .
