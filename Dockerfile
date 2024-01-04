@@ -1,6 +1,5 @@
 FROM python:3.9
 ENV PYTHONUNBUFFERED 1
-MAINTAINER Jagjot Singh <jagjotsingh2008@gmail.com>
 RUN mkdir /app
 WORKDIR /app
 COPY . /app/
