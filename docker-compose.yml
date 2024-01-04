@@ -8,10 +8,9 @@ services:
 
   web:
     build: .
-    command: python run.py
     volumes:
       - .:/app
-    image: jsingh/eeazycrm
+    image: eeazycrm:1
     ports:
       - "5000:5000"
     depends_on:
